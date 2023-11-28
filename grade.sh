@@ -1,4 +1,4 @@
-CPATH='.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar'
+CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
 
 # Test success tracking
 passed_tests=0
@@ -6,7 +6,7 @@ total_tests=4
 
 # Function to call each time we want to print out the number of tests that have passed
 testresults() {
-    printf "\nTests passed: $passed_tests/$total_tests"
+    printf "\nTests passed: $passed_tests/$total_tests\n"
 }
 
 # (Extra from bonus video #1)
